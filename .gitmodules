@@ -1,0 +1,12 @@
+[submodule "starknet-devnet-rs"]
+	path = starknet-devnet-rs
+	url = https://github.com/b-j-roberts/starknet-devnet-rs.git
+[submodule "cairo"]
+	path = cairo
+	url = https://github.com/b-j-roberts/cairo.git
+[submodule "blockifier"]
+	path = blockifier
+	url = https://github.com/b-j-roberts/blockifier.git
+[submodule "scarb"]
+	path = scarb
+	url = https://github.com/b-j-roberts/scarb.git

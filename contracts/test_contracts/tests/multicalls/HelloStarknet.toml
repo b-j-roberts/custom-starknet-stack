@@ -1,0 +1,11 @@
+[[call]]
+call_type = 'invoke'
+contract_address = '$CONTRACT_ADDRESS'
+function = 'increase_balance'
+inputs = ['0x1']
+
+[[call]]
+call_type = 'invoke'
+contract_address = '$CONTRACT_ADDRESS'
+function = 'increase_balance'
+inputs = ['0x2']
