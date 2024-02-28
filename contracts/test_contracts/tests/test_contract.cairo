@@ -35,7 +35,7 @@ fn test_cannot_increase_balance_with_zero_value() {
     assert(balance_before == 0, 'Invalid balance');
 
     match safe_dispatcher.increase_balance(0) {
-        Result::Ok(_) => panic_with_felt252('Should have panicked'),
+        Result::Ok(_) => panic!("Should have panicked"),
         Result::Err(panic_data) => {
             assert(*panic_data.at(0) == 'Amount cannot be 0', *panic_data.at(0));
         }

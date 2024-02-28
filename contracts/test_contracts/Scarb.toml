@@ -11,3 +11,6 @@ starknet = "2.4.0-rc6"
 
 [[target.starknet-contract]]
 casm = true
+sierra = true
+
+allowed-libfuncs-list.path = "all.json"
