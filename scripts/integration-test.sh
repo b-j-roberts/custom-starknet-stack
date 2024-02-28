@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# This script runs the blobstream integration tests.
+# This script runs the integration tests.
 
 # TODO: Host?
 RPC_HOST="127.0.0.1"
@@ -65,7 +65,7 @@ RPC_URL=http://$RPC_HOST:$RPC_PORT
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 WORK_DIR=$SCRIPT_DIR/..
 
-OUTPUT_DIR=$HOME/.blobstream-integration-tests
+OUTPUT_DIR=$HOME/.starknet-integration-tests
 TIMESTAMP=$(date +%s)
 LOG_DIR=$OUTPUT_DIR/logs/$TIMESTAMP
 TMP_DIR=$OUTPUT_DIR/tmp/$TIMESTAMP
@@ -99,6 +99,7 @@ echo "Starting the starknet-devnet node..."
 
 STARKNET_DEVNET_DIR=$WORK_DIR/starknet-devnet-rs/
 STARKNET_DEVNET_BIN=$STARKNET_DEVNET_DIR/target/debug/starknet-devnet
+#STARKNET_DEVNET_BIN=$HOME/workspace/starknet-devnet-rs/target/debug/starknet-devnet
 
 # TODO: dump options, no output,  ...
 # Start the starknet-devnet node
